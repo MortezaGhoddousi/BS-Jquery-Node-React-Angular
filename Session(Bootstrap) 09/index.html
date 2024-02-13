@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 1</title>
+    <link rel="stylesheet" href="./files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/3/united/bootstrap.min.css">
+    <link rel="stylesheet" href="./files/css/style.css">
+</head>
+<body>
+    <section>
+
+        <!---- Header ---->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="./index.html" class="navbar-brand">HOME PAGE</a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="mydropdown">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Option1</a></li>
+                        <li class="active"><a href="#">Option1</a></li>
+                        <li><a href="#">Option1</a></li>
+                        <li><a href="#">Option1</a></li>
+                    </ul>
+                    <button class="btn btn-default navbar-btn navbar-right" id="register">Inbox <span class="label label-danger">NEW</span></button>
+                    <button class="btn btn-default navbar-btn navbar-right">Notification <span id="badge" class="badge">20</span></button>
+                </div>
+            </div>
+        </nav>
+        
+        <!---- Carousel ---->
+
+        <div class="carousel slide" id="myslider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#myslider" data-slide-to="0"></li>
+                <li data-target="#myslider" data-slide-to="1"></li>
+                <li data-target="#myslider" data-slide-to="2"></li>
+                <li data-target="#myslider" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./files/images/1.jpg" alt="" style="width: 100%;">
+                    <div class="carousel-caption">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nemo?</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./files/images/2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nemo?</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./files/images/3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nemo?</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./files/images/4.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nemo?</h2>
+                    </div>
+                </div>
+                <a href="#myslider" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#myslider" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+
+        <!---- Jumbotron ---->
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Jumbotrons</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium debitis. 
+                    Velit dolore perspiciatis quam incidunt, natus deserunt, dolorem placeat eaque rem sunt quis nam maiores porro, 
+                    voluptatem aperiam suscipit?
+                </p>
+            </div>
+        </div>
+
+        <!---- Modal ---->
+
+        <div class="container-fluid" id="container">
+            <div class="modal fade" id="mymodal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                            <h2 class="modal-title">Lorem</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis perferendis ab delectus ipsa nemo similique expedita architecto nostrum fuga quasi cupiditate, est, cumque dicta facere! Eligendi architecto eaque dolor iusto.</p>
+                            <p class="modal-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis perferendis ab delectus ipsa nemo similique expedita architecto nostrum fuga quasi cupiditate, est, cumque dicta facere! Eligendi architecto eaque dolor iusto.</p>
+                            <p class="modal-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis perferendis ab delectus ipsa nemo similique expedita architecto nostrum fuga quasi cupiditate, est, cumque dicta facere! Eligendi architecto eaque dolor iusto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Accordian ---->
+
+            <div class="col-sm-12">
+                <div class="panel-group" id="myaccordian">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <!-- <img src="./files/images/3.jpg" data-target="#panel1" data-toggle="collapse" data-parent="#myaccordian" alt=""> -->
+                            <h3 class="panel-title" data-target="#panel1" data-toggle="collapse" data-parent="#myaccordian">Title 1 <span class="caret"></span></h3>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel1">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-target="#panel2" data-toggle="collapse" data-parent="#myaccordian">Title 2 <span class="caret"></span></h3>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel2">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-target="#panel3" data-toggle="collapse" data-parent="#myaccordian">Title 3 <span class="caret"></span></h3>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel3">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-target="#panel4" data-toggle="collapse" data-parent="#myaccordian">Title 4 <span class="caret"></span></h3>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel4">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit veritatis necessitatibus autem voluptatibus aliquid. Eius temporibus necessitatibus consequuntur quis eligendi libero ipsa odit ex exercitationem. Assumenda, voluptate. Sit, minus quia!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Main Body ---->
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Topic1</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium debitis. 
+                                Velit dolore perspiciatis quam incidunt, natus deserunt, dolorem placeat eaque rem sunt quis nam maiores porro, 
+                                voluptatem aperiam suscipit?
+                            </p>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="" data-toggle="modal" data-target="#mymodal" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">More info ...</a>
+                        </div>
+                    </div>           
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Topic1</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium debitis. 
+                                Velit dolore perspiciatis quam incidunt, natus deserunt, dolorem placeat eaque rem sunt quis nam maiores porro, 
+                                voluptatem aperiam suscipit?
+                            </p>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="" data-toggle="modal" data-target="#mymodal" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">More info ...</a>
+                        </div>
+                    </div>           
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Topic1</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium debitis. 
+                                Velit dolore perspiciatis quam incidunt, natus deserunt, dolorem placeat eaque rem sunt quis nam maiores porro, 
+                                voluptatem aperiam suscipit?
+                            </p>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="" data-toggle="modal" data-target="#mymodal" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">More info ...</a>
+                        </div>
+                    </div>           
+                </div>       
+                <div class="col-xs-6 col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Topic1</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium debitis. 
+                                Velit dolore perspiciatis quam incidunt, natus deserunt, dolorem placeat eaque rem sunt quis nam maiores porro, 
+                                voluptatem aperiam suscipit?
+                            </p>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="" data-toggle="modal" data-target="#mymodal" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">More info ...</a>
+                        </div>
+                    </div>           
+                </div>
+                <div class="panel">
+
+                </div>
+            </div>
+            <div class="row" id="third">
+                <div class="col-xs-6">
+                    <h2>Get in touch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatum tempore vitae perferendis iure perspiciatis laborum, recusandae non inventore, enim quos totam. Provident amet fugiat minus ducimus esse molestiae nihil.</p>
+                </div>
+
+                <!---- Form ---->
+
+                <div class="col-xs-6">
+                    <form action="">
+                        <div class="form-group">
+                            <label class="sr-only" for="name">Name</label>
+                            <input class="form-control" type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="email">Email</label>
+                            <input class="form-control" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-inline" for="q1">
+                                <input type="checkbox" name="q1">
+                                Option1
+                            </label>
+                            <label class="checkbox-inline" for="q1">
+                                <input type="checkbox" name="q1">
+                                Option2
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="radio-inline" for="q2">
+                                <input type="radio" name="q2">
+                                Option1
+                            </label>
+                            <label class="radio-inline" for="q2">
+                                <input type="radio" name="q2">
+                                Option2
+                            </label>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="./files/js/jquery.js"></script>
+    <script src="./files/js/bootstrap.min.js"></script>
+    <script src="./files/js/script.js"></script>
+</body>
+</html>
