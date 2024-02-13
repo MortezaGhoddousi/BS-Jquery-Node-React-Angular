@@ -1,0 +1,17 @@
+#reg {
+    margin-left: 5px;
+}
+
+.item img {
+    width: 100%;
+    /* height: 100%; */
+    /* align-items: center; */
+}
+
+.item {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    height: 100%;
+}
