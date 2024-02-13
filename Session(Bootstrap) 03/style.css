@@ -1,0 +1,24 @@
+.container-fluid {
+    /* background: #ccc; */
+    margin: 50px auto;
+    height: 200px;
+}
+
+.items {
+    /* height: 100px; */
+    text-align: center;
+    padding: 60px;
+}
+
+.items:nth-child(even){
+    background: #ccc;
+}
+
+
+.items:nth-child(odd){
+    background: #797878;
+}
+
+.row {
+    margin: 10px;
+}

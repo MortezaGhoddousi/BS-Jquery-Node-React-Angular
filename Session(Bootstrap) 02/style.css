@@ -1,0 +1,23 @@
+h4 {
+    border: 2px solid gray;
+    background: gray;
+    padding: 10px;
+}
+
+h3 {
+    border: 2px solid rgb(192, 190, 190);
+    background: rgb(192, 190, 190);
+    padding: 10px;
+}
+
+.container {
+    border: 2px solid gray;
+    background: gray;
+    margin: 2px;
+}
+
+.container-fluid {
+    border: 2px solid rgb(192, 190, 190);
+    background: rgb(192, 190, 190);
+    margin: 2px;
+}
