@@ -1,0 +1,44 @@
+body {
+    background: rgb(120, 131, 136);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 16px;
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+input,
+label {
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: auto;
+}
