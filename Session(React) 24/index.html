@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Session 24</title>
+        <script
+            crossorigin
+            src="https://unpkg.com/react@18/umd/react.development.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        ></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script type="text/babel">
+            class App extends React.Component {
+                state = {
+                    name: "Younes",
+                    job: "Developer",
+                    age: 17,
+                };
+
+                handleClick = (e) => {
+                    console.log(e.target);
+                    console.log(this.state);
+                };
+
+                handleCopy = (e) => {
+                    console.log("Try being original for once!");
+                };
+
+                handleChange = (e) => {
+                    this.setState({
+                        name: e.target.value,
+                    });
+                };
+
+                handleSubmit = (e) => {
+                    e.preventDefault();
+                    console.log(this.state);
+                };
+                render() {
+                    return (
+                        <div className="app-content">
+                            <h1>My name is: {this.state.name}</h1>
+                            <p>My job is: {this.state.job}</p>
+                            <p>
+                                and I am {this.state.age} and I strongly white
+                            </p>
+                            <button onClick={this.handleClick}>Click me</button>
+                            <p onCopy={this.handleCopy}>
+                                What we Think, we become
+                            </p>
+
+                            <form onSubmit={this.handleSubmit}>
+                                <input
+                                    type="text"
+                                    onChange={this.handleChange}
+                                />
+                                <input type="submit" />
+                            </form>
+                        </div>
+                    );
+                }
+            }
+            ReactDOM.render(<App />, document.querySelector("#app"));
+        </script>
+    </body>
+</html>
